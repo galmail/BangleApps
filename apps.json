@@ -10,6 +10,17 @@
     ],
     "sortorder" : -10
   },
+  { "id": "ttrocks",
+    "name": "Times Table RockStars",
+    "icon": "ttrocks.png",
+    "description": "Great app for kids to practice times table",
+    "tags": "kids,math,game",
+    "storage": [
+      {"name":"+ttrocks","url":"ttrocks.json"},
+      {"name":"-ttrocks","url":"ttrocks.js"},
+      {"name":"*ttrocks","url":"ttrocks-icon.js","evaluate":true}
+    ]
+  },
   { "id": "gbridge",
     "name": "Gadgetbridge",
     "icon": "app.png",
