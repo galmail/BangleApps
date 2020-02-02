@@ -1,20 +1,18 @@
 (() => {
 
-    // place your const, vars, functions or classes here
+    const totalQuestions = 20;
     const leftButton = BTN4;
     const rightButton = BTN5;
-  
-    const getRandomNumber = (max) => Math.floor(Math.random()*max)+1;
-    const getRandomSide = () => getRandomNumber(2);
-    const totalQuestions = 20;
 
     let answers = 0;
     let correctAnswers = 0;
     let leftSideIsCorrect = false;
 
+    const getRandomNumber = (max) => Math.floor(Math.random()*max)+1;
+    const getRandomSide = () => getRandomNumber(2);
+
     function main() {
-        // press the middle button to start the game
-        E.showMessage('Press the middle button to start');
+        E.showMessage('Press the middle\nbutton to start');
         startGame();
     }
 
@@ -100,15 +98,6 @@
         }, BTN2, { repeat:true });
     }
   
-    // special function to handle display switch on
-    Bangle.on('lcdPower', (on) => {
-        if (on) {
-        	// drawWidgets();
-            // call your app function here
-            main();
-    }});
-
-    g.clear();
-    // call your app function here 
+    main();
 
 })();
